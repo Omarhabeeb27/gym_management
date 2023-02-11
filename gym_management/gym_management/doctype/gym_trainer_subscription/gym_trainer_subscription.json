@@ -10,9 +10,9 @@
  "field_order": [
   "trainer_subscription",
   "gym_member",
-  "email",
   "gym_trainer",
   "trainer_name",
+  "email",
   "date_assigned",
   "rating",
   "rating_comments",
@@ -65,6 +65,7 @@
    "label": "route"
   },
   {
+   "fetch_from": "gym_trainer.email",
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email"
@@ -80,7 +81,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2023-02-11 01:50:21.848491",
+ "modified": "2023-02-11 19:04:13.620102",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Gym Trainer Subscription",

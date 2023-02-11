@@ -167,7 +167,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-09 13:17:43.732477",
+ "modified": "2023-02-11 18:50:34.554237",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Gym Member",
@@ -196,6 +196,7 @@
    "read": 1,
    "report": 1,
    "role": "Gym Admin",
+   "select": 1,
    "share": 1,
    "write": 1
   },
@@ -206,6 +207,7 @@
    "read": 1,
    "report": 1,
    "role": "Gym Trainer",
+   "select": 1,
    "share": 1
   },
   {
@@ -215,6 +217,7 @@
    "read": 1,
    "report": 1,
    "role": "Gym Member",
+   "select": 1,
    "share": 1
   }
  ],

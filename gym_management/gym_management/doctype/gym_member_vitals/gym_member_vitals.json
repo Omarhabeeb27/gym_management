@@ -34,6 +34,7 @@
    "reqd": 1
   },
   {
+   "fetch_from": "gym_member.full_name",
    "fieldname": "full_name",
    "fieldtype": "Data",
    "in_standard_filter": 1,
@@ -41,9 +42,12 @@
    "read_only": 1
   },
   {
+   "fetch_from": "gym_member.email",
    "fieldname": "gym_member_email",
    "fieldtype": "Data",
-   "label": "Gym Member Email"
+   "label": "Gym Member Email",
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "date",
@@ -77,16 +81,19 @@
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Naming series",
    "options": "\nVITALS-.YY.-##"
   },
   {
+   "fetch_from": "gym_member.height",
    "fieldname": "height",
    "fieldtype": "Float",
    "label": "Height (in meters)",
    "reqd": 1
   },
   {
+   "fetch_from": "gym_member.weight",
    "fieldname": "weight",
    "fieldtype": "Float",
    "label": "Weight (in kgs)",
@@ -104,6 +111,7 @@
    "label": "route"
   },
   {
+   "default": "0",
    "fieldname": "is_published",
    "fieldtype": "Data",
    "label": "Is published"
@@ -113,7 +121,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2023-02-07 14:45:29.435379",
+ "modified": "2023-02-11 19:09:17.259789",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Gym Member Vitals",

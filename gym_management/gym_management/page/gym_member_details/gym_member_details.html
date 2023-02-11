@@ -20,7 +20,9 @@
             <th>Start Date</th>
             <th>End Date</th>
             <th>Includes Trainer</th>
+            <th>Days Left</th>
             <th>Small Description</th>
+
         </tr>
         {% for m in data.gym_membership %}
         <tr>
@@ -28,6 +30,7 @@
             <td>{{ m.start_date}}</td>
             <td>{{ m.end_date}}</td>
             <td>{{ m.trainer_inclusive}}</td>
+            <td>{{ m.days_left}}</td>
             <td>{{ m.description}}</td>
         </tr>
         {% endfor %}

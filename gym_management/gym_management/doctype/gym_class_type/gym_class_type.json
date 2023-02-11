@@ -8,7 +8,8 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "class_type"
+  "class_type",
+  "extra_details"
  ],
  "fields": [
   {
@@ -18,11 +19,16 @@
    "label": "Class Type",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "extra_details",
+   "fieldtype": "Data",
+   "label": "Extra Details"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-05 10:51:27.912241",
+ "modified": "2023-02-11 19:14:20.882402",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Gym Class Type",

@@ -34,9 +34,11 @@
    "options": "Gym Class Type"
   },
   {
+   "fetch_from": "gym_class.date",
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "Date"
+   "label": "Date",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_lxwf",
@@ -55,7 +57,7 @@
    "options": "\nConfirmed\nPending\nCancelled"
   },
   {
-   "fetch_from": "gym_member.first_name",
+   "fetch_from": "gym_member.full_name",
    "fieldname": "full_name",
    "fieldtype": "Data",
    "label": "Full Name",
@@ -77,7 +79,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-06 13:51:10.190773",
+ "modified": "2023-02-11 19:18:57.184527",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Gym Class Booking",
