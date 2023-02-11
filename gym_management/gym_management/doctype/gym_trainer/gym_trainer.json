@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Trainer-{full_name}-{##}",
+ "creation": "2023-02-05 10:19:15.278528",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "trainer_details",
+  "section_break_tsrn",
+  "first_name",
+  "last_name",
+  "full_name",
+  "email",
+  "gender",
+  "column_break_ervm",
+  "mobile_number",
+  "dob",
+  "trainer_id",
+  "trainer_id_type",
+  "attach_id_image",
+  "active",
+  "trainers_bio_section",
+  "trainers_qualification",
+  "column_break_jnyh",
+  "additional_notes",
+  "certification_image_1",
+  "certification_image_2"
+ ],
+ "fields": [
+  {
+   "fieldname": "trainer_details",
+   "fieldtype": "Heading",
+   "label": "Trainer Details"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_ervm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Phone",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "DOB"
+  },
+  {
+   "fieldname": "trainer_id",
+   "fieldtype": "Data",
+   "label": "Trainer ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "trainer_id_type",
+   "fieldtype": "Data",
+   "label": "Trainer ID Type"
+  },
+  {
+   "fieldname": "attach_id_image",
+   "fieldtype": "Attach Image",
+   "label": "Attach ID image"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "section_break_tsrn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "trainers_bio_section",
+   "fieldtype": "Section Break",
+   "label": "Trainer's Bio"
+  },
+  {
+   "fieldname": "trainers_qualification",
+   "fieldtype": "Text Editor",
+   "label": "Trainers Qualification"
+  },
+  {
+   "fieldname": "certification_image_1",
+   "fieldtype": "Attach Image",
+   "label": "Certification Image 1"
+  },
+  {
+   "fieldname": "certification_image_2",
+   "fieldtype": "Attach Image",
+   "label": "Certification Image 2"
+  },
+  {
+   "fieldname": "additional_notes",
+   "fieldtype": "Small Text",
+   "label": "Additional Notes"
+  },
+  {
+   "fieldname": "column_break_jnyh",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-05 17:06:19.997407",
+ "modified_by": "Administrator",
+ "module": "Gym Management",
+ "name": "Gym Trainer",
+ "naming_rule": "By script",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

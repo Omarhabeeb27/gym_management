@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:locker_location",
+ "creation": "2023-02-05 14:54:17.435686",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "locker_details",
+  "locker_location",
+  "gym_member",
+  "available",
+  "location_details_section",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_gym_locker"
+ ],
+ "fields": [
+  {
+   "fieldname": "locker_details",
+   "fieldtype": "Heading",
+   "label": "Locker Details"
+  },
+  {
+   "fieldname": "locker_location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Locker Location",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "gym_member",
+   "fieldtype": "Link",
+   "label": "Gym Member ",
+   "options": "Gym Member"
+  },
+  {
+   "default": "0",
+   "fieldname": "available",
+   "fieldtype": "Check",
+   "label": "Available"
+  },
+  {
+   "fieldname": "location_details_section",
+   "fieldtype": "Section Break",
+   "label": "Location Details"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Gym Locker"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Gym Locker"
+  },
+  {
+   "fieldname": "parent_gym_locker",
+   "fieldtype": "Link",
+   "label": "Parent Gym Locker",
+   "options": "Gym Locker"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2023-02-05 14:55:24.462417",
+ "modified_by": "Administrator",
+ "module": "Gym Management",
+ "name": "Gym Locker",
+ "naming_rule": "By fieldname",
+ "nsm_parent_field": "parent_gym_locker",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

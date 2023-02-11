@@ -1,0 +1,138 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:GC-{class_name}-{##}",
+ "creation": "2023-02-05 11:12:23.336445",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "class_details_section",
+  "class_name",
+  "class_type",
+  "column_break_prg9",
+  "date",
+  "time",
+  "section_break_fg9u",
+  "gym_tainer",
+  "availability",
+  "class_status",
+  "column_break_8z6z",
+  "no_gym_trainer",
+  "is_published",
+  "route"
+ ],
+ "fields": [
+  {
+   "fieldname": "class_details_section",
+   "fieldtype": "Section Break",
+   "label": "Class Details"
+  },
+  {
+   "fieldname": "class_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Class Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "class_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Class Type",
+   "options": "Gym Class Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_prg9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_fg9u",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "gym_tainer",
+   "fieldtype": "Link",
+   "label": "Gym Tainer",
+   "options": "Gym Trainer"
+  },
+  {
+   "fieldname": "availability",
+   "fieldtype": "Select",
+   "label": "Availability",
+   "options": "\nAvailable\nNot Available Until Noon\nAvailable After 5pm"
+  },
+  {
+   "fieldname": "class_status",
+   "fieldtype": "Select",
+   "label": "Class Status",
+   "options": "\nFull\nSpace For 10-15 Members\nCancelled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_8z6z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "no_gym_trainer",
+   "fieldtype": "Check",
+   "label": "No Gym Trainer"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "route"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-05 14:40:43.294438",
+ "modified_by": "Administrator",
+ "module": "Gym Management",
+ "name": "Gym Class",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

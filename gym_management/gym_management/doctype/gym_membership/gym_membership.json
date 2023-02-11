@@ -1,0 +1,195 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{first_name}-GP{YY}-{##}",
+ "creation": "2023-02-02 14:07:46.531854",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "gym_member",
+  "gym_plan",
+  "price",
+  "plan_status",
+  "column_break_9mli",
+  "start_date",
+  "end_date",
+  "payment_status",
+  "time_slots",
+  "trainer_inclusive",
+  "locker_inclusive",
+  "amended_from",
+  "description",
+  "days_left",
+  "length"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "GP -.YY.-"
+  },
+  {
+   "fieldname": "gym_plan",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Gym Plan ",
+   "options": "Gym Membership Type",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "gym_plan.price",
+   "fieldname": "price",
+   "fieldtype": "Float",
+   "label": "Price",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "plan_status",
+   "fieldtype": "Select",
+   "label": "Plan Status",
+   "options": "Active\nNot Active\nCancelled"
+  },
+  {
+   "default": "Today",
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Payment Status",
+   "options": "Paid\nPending\nOverdue",
+   "reqd": 1
+  },
+  {
+   "fieldname": "time_slots",
+   "fieldtype": "Select",
+   "label": "TIme Slots",
+   "options": "Morning (6 am - 12 pm)\nNight (5pm - 12pm)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "trainer_inclusive",
+   "fieldtype": "Select",
+   "label": "Trainer Inclusive",
+   "options": "\nYes\nNo"
+  },
+  {
+   "default": "0",
+   "fieldname": "locker_inclusive",
+   "fieldtype": "Check",
+   "label": "Locker Inclusive"
+  },
+  {
+   "fieldname": "column_break_9mli",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Gym Membership",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "gym_member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Member Name",
+   "options": "Gym Member",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "days_left",
+   "fieldtype": "Data",
+   "label": "Days left"
+  },
+  {
+   "fetch_from": "gym_plan.duration",
+   "fieldname": "length",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Length"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-02-09 16:13:24.768200",
+ "modified_by": "Administrator",
+ "module": "Gym Management",
+ "name": "Gym Membership",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Trainer",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Member",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

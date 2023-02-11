@@ -1,0 +1,39 @@
+{% extends "templates/web.html" %}
+{% block title %}
+{{ _("My Account") }}
+{% endblock %}
+{% block page_content %}
+<div class="my-account-container">
+    <h5 class="my-account-header">Your Gym Contracts</h5>
+    <div class="row account-info d-flex flex-column">
+        <div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Plan</th>
+                        <th scope="col">Start Date</th>
+                        <th scope="col">End Date</th>
+                        <th scope="col">Days Left</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Payment Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for contract in contracts %}
+                    <tr>
+                        <td>{{ contract.gym_plan }}</td>
+                        <td>{{ contract.start_date }}</td>
+                        <td>{{ contract.end_date }}</td>
+                        <td>{{ contract.days_left }}</td>
+                        <td><span class="{{ contract.badge }}">{{ contract.plan_status }}</span>
+                        </td>
+                        <td>{{ contract.payment_status }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</div>
+{% endblock %}

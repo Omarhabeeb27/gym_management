@@ -1,0 +1,31 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+
+<main role="main">
+    
+    <div class= "jumbotron">
+        <div class="container">
+            <h1 align="center" class="display-3">GYM BOOOIS</h1>
+            <p align="center">Welcome to the GYM BOOOIS. </br>Here are the following GYM PLANSS:</p>
+            
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            {% for workout in workouts %}
+           
+
+            <div class="col-md-4">
+                <h3>{{ workout.plan_name }}</h3>
+                <img width=200px src="{{ workout.photo }}">
+                <p>{{ workout.description}}</p>
+                <p><a class="btn btn-secondary" href="{{ workout.route }}" role="button">View details &raquo;</a></p>
+            </div>
+            {% endfor %}
+            <hr>
+        </div> 
+    </div>
+</main>
+{% endblock %}

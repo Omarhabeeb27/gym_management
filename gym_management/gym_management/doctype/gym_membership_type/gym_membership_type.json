@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:membership_type",
+ "creation": "2023-02-05 09:31:39.736967",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "membership_type",
+  "timings",
+  "active",
+  "includes_trainer",
+  "column_break_xhn1",
+  "price",
+  "duration",
+  "gym_plan_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "membership_type",
+   "fieldtype": "Data",
+   "label": "Membership Type",
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "default": "0",
+   "fieldname": "includes_trainer",
+   "fieldtype": "Check",
+   "label": "Includes trainer"
+  },
+  {
+   "fieldname": "gym_plan_details",
+   "fieldtype": "Small Text",
+   "label": "Gym Plan Details"
+  },
+  {
+   "fieldname": "column_break_xhn1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "timings",
+   "fieldtype": "Time",
+   "label": "Timings"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Price",
+   "reqd": 1
+  },
+  {
+   "default": "30",
+   "description": "In Days",
+   "fieldname": "duration",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Duration",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-09 15:47:32.039318",
+ "modified_by": "Administrator",
+ "module": "Gym Management",
+ "name": "Gym Membership Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
