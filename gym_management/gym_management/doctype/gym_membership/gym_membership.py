@@ -22,9 +22,9 @@ def get_plan_status(start_date, end_date):
 	end = getdate(end_date)
 	start = getdate(start_date)
 	if end < today:
-		return "Expired"
+		return "Cancelled"
 	elif start > today:	
-		return "Not Started"
+		return "Not active"
 	else:
 		return "Active"	
 
