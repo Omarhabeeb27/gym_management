@@ -1,0 +1,35 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-02-06 13:53:26.375357",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[],\"fields\":[[\"gym_class_type\",\"Gym Class Booking\"],[\"_aggregate_column\",\"Gym Class Booking\"]],\"order_by\":\"`tabGym Class Booking`.`modified` desc\",\"page_length\":20,\"column_widths\":{\"gym_class_type\":120,\"_aggregate_column\":200},\"group_by\":{\"group_by\":\"`tabGym Class Booking`.`gym_class_type`\",\"aggregate_function\":\"count\",\"aggregate_on\":null}}",
+ "modified": "2023-02-15 12:17:57.233209",
+ "modified_by": "Administrator",
+ "module": "Gym Management",
+ "name": "Popular Class Booking (by count)",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Gym Class Booking",
+ "report_name": "Popular Class Booking (by count)",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Gym Admin"
+  },
+  {
+   "role": "Gym Member"
+  },
+  {
+   "role": "Gym Trainer"
+  }
+ ]
+}
