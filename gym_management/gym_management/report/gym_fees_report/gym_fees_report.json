@@ -8,7 +8,7 @@
  "filters": [
   {
    "fieldname": "gym_member",
-   "fieldtype": "Check",
+   "fieldtype": "Data",
    "label": "Gym Member",
    "mandatory": 0,
    "wildcard_filter": 0
@@ -16,13 +16,13 @@
  ],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2023-02-07 03:48:04.486964",
+ "modified": "2023-02-15 16:59:56.917683",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Gym Fees Report",
  "owner": "Administrator",
  "prepared_report": 0,
- "query": "SELECT\n  `tabGym Membership`.name as \"Contract:Link/Gym Membership:200\",\n  `tabGym Membership`.gym_plan as \"Plan:Link/Gym Membership Type:200\",\n  `tabGym Membership`.gym_member as \"Member:Link/Gym Member:200\",\n  `tabGym Membership`.start_date as \"Date:Date:120\",\n  `tabGym Membership`.price as \"Amount:Float:150\"\nFROM\n  `tabGym Membership`\nWHERE\n  `tabGym Membership`.payment_status='Paid'",
+ "query": "SELECT\n  `tabGym Membership`.name as \"Contract:Link/Gym Membership:200\",\n  `tabGym Membership`.gym_plan as \"Plan:Link/Gym Membership Type:200\",\n  `tabGym Membership`.gym_member as \"Member:Link/Gym Member:200\",\n  `tabGym Membership`.start_date as \"Date:Date:120\",\n  `tabGym Membership`.price as \"Amount:Float:150\"\nFROM\n  `tabGym Membership`\nWHERE\n  `tabGym Membership`.payment_status='Paid'\n  \n  \n  \n  /*\n  SELECT\n  name, gym_plan, gym_member, start_date, price\n  \nFROM\n  `tabGym Membership`\nWHERE\n  `tabGym Membership`.payment_status='Paid'\n  */",
  "ref_doctype": "Gym Membership",
  "report_name": "Gym Fees Report",
  "report_type": "Query Report",
